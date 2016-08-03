@@ -1,7 +1,7 @@
 package com.kodea.tdd.calc.user;
 
 import java.util.Scanner;
-
+//Cambiar a double en operador tb
 public class Usuario {
 	Scanner scanner = new Scanner(System.in);
 	

@@ -2,6 +2,7 @@ package com.kodea.tdd.calc;
 
 import java.util.Scanner;
 
+import com.kodea.tdd.calc.oper.IOperador;
 import com.kodea.tdd.calc.oper.Operador;
 import com.kodea.tdd.calc.user.Usuario;
 
@@ -20,7 +21,7 @@ public class Calculadora {
 				result = oper.add(user.pedirPrimerOperando(), user.pedirSegundoOperando());
 				break;
 			case "-":
-				result = oper.substract(user.pedirPrimerOperando(), user.pedirSegundoOperando());
+				result = oper.subtract(user.pedirPrimerOperando(), user.pedirSegundoOperando());
 				break;
 			case "/":
 				result = oper.divide(user.pedirPrimerOperando(), user.pedirSegundoOperando());

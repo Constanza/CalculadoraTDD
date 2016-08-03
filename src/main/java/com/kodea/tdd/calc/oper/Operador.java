@@ -1,11 +1,14 @@
 package com.kodea.tdd.calc.oper;
 
-public class Operador {
+import org.springframework.stereotype.Service;
+
+@Service
+public class Operador  implements IOperador{
 	public double add(int val1, int val2) {
 		return val1+val2;
 	}
 
-	public double substract(int val1, int val2) {
+	public double subtract(int val1, int val2) {
 		return val1-val2;
 	}
 

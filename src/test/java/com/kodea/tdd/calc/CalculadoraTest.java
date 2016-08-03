@@ -41,7 +41,7 @@ public class CalculadoraTest {
 		int val1=1;
 		int val2=20;
 		
-		double result = oper.substract(val1,val2);
+		double result = oper.subtract(val1,val2);
 		
 		assertEquals(-19,result,0.1);
 	}
