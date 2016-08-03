@@ -1,29 +1,38 @@
 package com.kodea.tdd.calc;
 
+import java.util.Scanner;
+
+import com.kodea.tdd.calc.oper.Operador;
+import com.kodea.tdd.calc.user.Usuario;
+
 public class Calculadora {
 
-	public double add(int val1, int val2) {
-		// TODO Auto-generated method stub
-		return 21;
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		Usuario user = new Usuario();
+		Operador oper = new Operador();
+		String listo;
+		double result = 0.0;
+		do {
+			switch (user.pedirOperador()) {
+			case "+":
+				result = oper.add(user.pedirPrimerOperando(), user.pedirSegundoOperando());
+				break;
+			case "-":
+				result = oper.substract(user.pedirPrimerOperando(), user.pedirSegundoOperando());
+				break;
+			case "/":
+				result = oper.divide(user.pedirPrimerOperando(), user.pedirSegundoOperando());
+				break;
+			case "*":
+				result = oper.multiply(user.pedirPrimerOperando(), user.pedirSegundoOperando());
+				break;
+
+			}
+			System.out.println("Resultado: " + result + " \nPresione tecla s para salir");
+			listo = scanner.next();
+		} while (!listo.equalsIgnoreCase("s"));
 	}
 
-	public double substract(int val1, int val2) {
-		// TODO Auto-generated method stub
-		return -19;
-	}
-
-	public double multiply(int val1, int val2) {
-		// TODO Auto-generated method stub
-		return 6;
-	}
-
-	public double divide(int val1, int val2) throws ArithmeticException{
-		// TODO Auto-generated method stub
-		if (val2 == 0) {
-			throw new ArithmeticException("Valor 2 debe ser distinto de cero.");
-		}
-		return 3;
-	}
-
-	
 }
