@@ -26,7 +26,7 @@ public class Controller {
    
    
     @RequestMapping(value="/add/{val1}/{val2}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public  Response add(@PathVariable int val1, @PathVariable int val2) {
+    public  Response add(@PathVariable double val1, @PathVariable double val2) {
            
         System.out.println("Adding...."+val1+" and "+val2);
         return  new Response(counter.incrementAndGet(), this.oper.add(val1, val2));
@@ -34,7 +34,7 @@ public class Controller {
     }
    
     @RequestMapping(value="/subtract/{val1}/{val2}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public  Response subtract(@PathVariable int val1, @PathVariable int val2) {
+    public  Response subtract(@PathVariable double val1, @PathVariable double val2) {
            
         System.out.println("Subtracting...."+val1+" and "+val2);
         return  new Response(counter.incrementAndGet(), this.oper.subtract(val1, val2));
@@ -42,7 +42,7 @@ public class Controller {
     }
    
     @RequestMapping(value="/multiply/{val1}/{val2}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public  Response multiply(@PathVariable int val1, @PathVariable int val2) {
+    public  Response multiply(@PathVariable double val1, @PathVariable double val2) {
            
         System.out.println("Multiplying...."+val1+" and "+val2);
         return  new Response(counter.incrementAndGet(), this.oper.multiply(val1, val2));
@@ -50,7 +50,7 @@ public class Controller {
     }
    
     @RequestMapping(value="/divide/{val1}/{val2}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public  Response divide(@PathVariable int val1, @PathVariable int val2) {
+    public  Response divide(@PathVariable double val1, @PathVariable double val2) {
            
         System.out.println("dividing...."+val1+" and "+val2);
         return  new Response(counter.incrementAndGet(), this.oper.divide(val1, val2));

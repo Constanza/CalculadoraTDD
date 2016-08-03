@@ -2,7 +2,6 @@ package com.kodea.tdd.calc;
 
 import java.util.Scanner;
 
-import com.kodea.tdd.calc.oper.IOperador;
 import com.kodea.tdd.calc.oper.Operador;
 import com.kodea.tdd.calc.user.Usuario;
 
@@ -33,6 +32,11 @@ public class Calculadora {
 			}
 			System.out.println("Resultado: " + result + " \nPresione tecla s para salir");
 			listo = scanner.next();
+			
+			if (listo.equalsIgnoreCase("s")) {
+				scanner.close();
+			}
+			
 		} while (!listo.equalsIgnoreCase("s"));
 	}
 

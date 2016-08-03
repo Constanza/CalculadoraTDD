@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodea.tdd.calc.CalculadoraTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-08-03T17:46:06" hostname="laptop" time="0.008">
+<testsuite name="com.kodea.tdd.calc.CalculadoraTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-08-03T23:55:03" hostname="laptop" time="0.068">
   <properties/>
-  <testcase name="checkInstance" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.005"/>
+  <testcase name="checkInstance" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.022"/>
   <testcase name="checkDivideByZero" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.001"/>
-  <testcase name="checkSubstractTwoIntegers" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.001"/>
-  <testcase name="checkMultiplyTwoIntegers" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.0"/>
-  <testcase name="checkDivideTwoIntegers" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.0"/>
-  <testcase name="checkAddTwoIntegers" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.0"/>
+  <testcase name="checkSubstractTwoIntegers" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.011"/>
+  <testcase name="checkMultiplyTwoIntegers" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.001"/>
+  <testcase name="checkDivideTwoIntegers" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.003"/>
+  <testcase name="checkAddTwoIntegers" classname="com.kodea.tdd.calc.CalculadoraTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
