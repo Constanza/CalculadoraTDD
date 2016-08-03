@@ -17,8 +17,11 @@ public class Calculadora {
 		return 6;
 	}
 
-	public double divide(int val1, int val2) {
+	public double divide(int val1, int val2) throws ArithmeticException{
 		// TODO Auto-generated method stub
+		if (val2 == 0) {
+			throw new ArithmeticException("Valor 2 debe ser distinto de cero.");
+		}
 		return 3;
 	}
 
